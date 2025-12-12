@@ -1,7 +1,3 @@
-
-<div align="center">
-  <img src="/Users/achyuthkp/.gemini/antigravity/brain/dba76f17-9aa9-4d23-87f9-24c191032f23/json_model_studio_banner_1765566733155.png" alt="JSON Model Studio Banner" width="100%" />
-
   # JSON Model Studio
   
   **Analysis • Transformation • Generation**
