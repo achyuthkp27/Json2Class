@@ -2,6 +2,7 @@
   "name": "json-model-studio",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://achyuthkp27.github.io/Json2Class",
   "type": "module",
   "scripts": {
     "dev": "vite",
