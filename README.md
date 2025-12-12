@@ -1,16 +1,115 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="/Users/achyuthkp/.gemini/antigravity/brain/dba76f17-9aa9-4d23-87f9-24c191032f23/json_model_studio_banner_1765566733155.png" alt="JSON Model Studio Banner" width="100%" />
 
-Currently, two official plugins are available:
+  # JSON Model Studio
+  
+  **Analysis • Transformation • Generation**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <p>
+    <a href="#features">Features</a> •
+    <a href="#tech-stack">Tech Stack</a> •
+    <a href="#getting-started">Getting Started</a> •
+    <a href="#usage">Usage</a>
+  </p>
 
-## React Compiler
+  [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+  [![React](https://img.shields.io/badge/React-19.0-blue.svg?style=flat-square&logo=react)](https://reactjs.org/)
+  [![Vite](https://img.shields.io/badge/Vite-5.0-646CFF.svg?style=flat-square&logo=vite)](https://vitejs.dev/)
+  [![Style](https://img.shields.io/badge/Style-Neumorphic-gray.svg?style=flat-square)](https://github.com/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Introduction
+
+**JSON Model Studio** is a premium developer tool designed to eliminate the tedious task of manually creating data models. Simply paste your JSON, and instantly get production-ready, strongly-typed classes for your favorite programming languages. 
+
+Built with a focus on **Developer Experience (DX)** and **Visual Excellence**, it features a stunning glassmorphic UI, real-time parsing, and smart type inference.
+
+## ✨ Features
+
+- **⚡ Real-Time Generation**: Code is generated instantly as you type or paste your JSON.
+- **🎨 Premium UI/UX**: A modern, dark-themed interface with glassmorphism, smooth animations, and responsive layout.
+- **🌐 Multi-Language Support**:
+  - **Java** (with optional Lombok support)
+  - **Kotlin** (Data classes)
+  - **TypeScript** (Interfaces)
+  - **Dart** (Null-safety supported)
+  - **Swift** (Codable structs)
+  - **Go** (Structs with JSON tags)
+- **🧠 Smart Type Inference**: Automatically detects types, handles nullability, and infers array contents.
+- **⚙️ Customization**: 
+  - Change Root Class Name.
+  - Toggle strict null checks.
+  - Enable/Disable Lombok for Java.
+- **🛠️ Developer Tools**: 
+  - JSON Formatting/Prettifying.
+  - One-click Copy & Download.
+  - Syntax Highlighting (PrismJS).
+
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: React 19
+- **Build Tool**: Vite
+- **Styling**: CSS Modules (Variables, Flexbox/Grid)
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Syntax Highlighting**: PrismJS
+- **Utilities**: clsx
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/json-model-studio.git
+   cd json-model-studio
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to see the application in action.
+
+## 📖 Usage
+
+1. **Input JSON**: Paste your raw JSON payload into the left panel.
+2. **Configure**: Use the settings panel below the editor to set the Root Class Name or language-specific options (e.g., Lombok).
+3. **Select Language**: Click the tabs in the right panel to switch between Java, Kotlin, TypeScript, etc.
+4. **Export**: Click the **Copy** button to copy to clipboard or **Download** to save the file locally.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+  <sub>Built with ❤️ by High-Velocity Engineering</sub>
+</div>
