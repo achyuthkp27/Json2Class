@@ -1,0 +1,85 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background-color: var(--bg-app);
+    transition: background-color var(--transition-normal);
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+}
+
+.grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(var(--border-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-color) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: transform;
+}
+
+.blob1 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: transform;
+    width: 50vw;
+    height: 50vw;
+    background: var(--color-primary-start);
+    top: -10%;
+    left: -10%;
+    /* Parallax movement inverse to mouse */
+    transform: translate(calc(var(--mouse-x) * -0.05), calc(var(--mouse-y) * -0.05));
+}
+
+.blob2 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: transform;
+    width: 40vw;
+    height: 40vw;
+    background: var(--color-primary-end);
+    bottom: -10%;
+    right: -10%;
+    transform: translate(calc(var(--mouse-x) * 0.05), calc(var(--mouse-y) * 0.05));
+}
+
+.blob3 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.2;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    will-change: transform;
+    width: 30vw;
+    height: 30vw;
+    background: var(--color-success);
+    top: 40%;
+    left: 40%;
+    transform: translate(calc(var(--mouse-x) * 0.02), calc(var(--mouse-y) * 0.02));
+}
+
+/* Light theme adjustments */
+[data-theme='light'] .blob {
+    opacity: 0.3;
+    filter: blur(100px);
+}

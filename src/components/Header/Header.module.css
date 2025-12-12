@@ -1,0 +1,72 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-6);
+    /* background: var(--bg-panel); Removed for motion value control */
+    /* border-bottom: 1px solid var(--border-color); Removed for motion value control */
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 0.3s ease;
+    /* Fallback */
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+}
+
+.iconWrapper {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--color-primary-start), var(--color-primary-end));
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.4);
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-family: var(--font-mono);
+    min-width: 200px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.themeBtn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+}
+
+.themeBtn:hover {
+    background: var(--bg-panel-hover);
+    color: var(--text-primary);
+    border-radius: 50%;
+}

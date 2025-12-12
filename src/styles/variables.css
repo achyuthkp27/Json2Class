@@ -1,0 +1,79 @@
+:root {
+  /* Colors - Palette */
+  --color-primary-start: #6366F1;
+  /* Indigo 500 */
+  --color-primary-end: #A855F7;
+  /* Purple 500 */
+  --color-accent-glow: rgba(99, 102, 241, 0.5);
+
+  --color-success: #10B981;
+  --color-error: #EF4444;
+  --color-warning: #F59E0B;
+
+  /* Neutrals - Dark Theme (Default) */
+  --bg-app: #1e293b;
+  /* Slate 800 base */
+  --bg-panel: #1e293b;
+  /* Same as app for seamless neumorphism */
+  --bg-panel-hover: #334155;
+  --border-color: rgba(255, 255, 255, 0.05);
+
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-code: #e2e8f0;
+
+  /* Neumorphism - Dark */
+  --shadow-light: rgba(255, 255, 255, 0.05);
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-neu-flat: 5px 5px 10px var(--shadow-dark), -5px -5px 10px var(--shadow-light);
+  --shadow-neu-pressed: inset 5px 5px 10px var(--shadow-dark), inset -5px -5px 10px var(--shadow-light);
+  --shadow-neu-hover: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+
+  /* Glassmorphism */
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 16px;
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  --neon-glow: 0 0 10px rgba(99, 102, 241, 0.5), 0 0 20px rgba(99, 102, 241, 0.3);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+
+  /* Typography */
+  --font-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  /* Try modern font if available */
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+[data-theme='light'] {
+  --bg-app: #e0e5ec;
+  --bg-panel: #e0e5ec;
+  --bg-panel-hover: #eef2f6;
+  --border-color: rgba(255, 255, 255, 0.4);
+
+  --text-primary: #1f2937;
+  --text-secondary: #64748b;
+  --text-code: #334155;
+
+  /* Neumorphism - Light */
+  --shadow-light: #ffffff;
+  --shadow-dark: #a3b1c6;
+  --shadow-neu-flat: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+  --shadow-neu-pressed: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
+  --shadow-neu-hover: 10px 10px 20px var(--shadow-dark), -10px -10px 20px var(--shadow-light);
+}

@@ -1,0 +1,55 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: transparent;
+    /* Allow Background component to show */
+    color: var(--text-primary);
+}
+
+.main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+    overflow: hidden;
+    padding-top: 80px;
+    /* Header height */
+}
+
+/* For mobile, stack them */
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+        overflow-y: auto;
+    }
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    padding: var(--space-4);
+}
+
+.scrollArea {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: var(--space-2);
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-4);
+}
+
+.panelTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
